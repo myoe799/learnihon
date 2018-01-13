@@ -92,6 +92,8 @@
 	<link rel="apple-touch-icon-precomposed" href="../images/logo1.png">
 	<link rel="shortcut icon" href="../images/logo1.png">
 
+	<script src="../assets/js/jquery_web.js"></script>
+
 </head>
 
 <body class="landing">
@@ -99,55 +101,9 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<h1><a href="mailto:info@learnihon.com"> <span class="icon fa-paper-plane-o"></span> info@learnihon.com /</a> <a class="icon" onClick="document.getElementById('upperFooter').scrollIntoView();"><span class="icon fa-whatsapp"></span> / LINE</a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="../index.html" class="icon fa-home"> Home</a></li>
-					<li>
-						<a href="#" class="icon fa-map-marker"> Schools <span class="icon fa-angle-down"></span></a>
-						<ul>
-							<li><a href="tokyo.html">Tokyo</a>
-								<ul>
-									<li><a href="languageschool/ala_tokyo.html">ALA</a></li>
-									<li><a href="languageschool/isi_tokyo_ikebukuro.html">ISI Ikebukuro</a></li>
-									<li><a href="languageschool/isi_tokyo_takadanobaba.html">ISI Takadanobaba</a></li>
-								</ul>
-							</li>
-							<!--li><a href="osaka.html">Osaka</a></li-->
-							<li><a href="kyoto.html">Kyoto</a>
-								<ul>
-									<li><a href="languageschool/isi_kyoto.html">ISI Kyoto</a></li>
-									<li><a href="languageschool/nihongo_center.html">Nihongo Center</a></li>
-								</ul>
-							</li>
-							<li><a href="nagano.html">Nagano</a>
-								<ul>
-									<li><a href="languageschool/isi_nagano.html">ISI Nagano</a></li>
-								</ul>
-							</li>
-
-						</ul>
-					</li>
-					<li>
-						<a href="#" class="icon fa-language"> Language <span class="icon fa-angle-down"></span></a>
-						<ul>
-							<li><a href="kyoto.html">English</a></li>
-							<li><a href="../id/kyoto.html">Bahasa Indonesia</a></li>
-							<!--li><a href="../JP/tokyo.html">日本語</a></li-->
-							<!--li>
-											<a href="#">Submenu</a>
-											<ul>
-												<li><a href="#">Option One</a></li>
-												<li><a href="#">Option Two</a></li>
-												<li><a href="#">Option Three</a></li>
-												<li><a href="#">Option Four</a></li>
-											</ul>
-										</li-->
-						</ul>
-					</li>
-					<li><a class="button" onClick="document.getElementById('cta').scrollIntoView();"><span class="icon fa-envelope"></span> Contact Us</a></li>
-				</ul>
-			</nav>
+			<script>
+				$("#header").load("header.html #header");
+			</script>
 		</header>
 
 		<!-- bannerTokyo -->
@@ -181,7 +137,7 @@
 						<section class="box inside">
 							<span class="image featured"><img src="../images/ISI_KYOTO/DSCF0150.JPG" alt="" /></span>
 							<h3>ISI - International Study Institute</h3>
-							<p><span class="icon fa-map-marker"></span> Kyoto / 京都</p>
+							<p><span class="icon fa-map-marker"></span> Enmachi / 円町</p>
 							<ul class="actions">
 								<li><a href="languageschool/isi_kyoto.html" class="button alt">More details</a></li>
 							</ul>
@@ -189,9 +145,24 @@
 					</div>
 					<div class="6u 12u(narrower)">
 						<section class="box inside">
+							<span class="image featured"><img src="../images/KICL/1.jpg" alt=""/></span>
+							<h3>Kyoto Institute of Culture and Language</h3>
+							<p><span class="icon fa-map-marker"></span> Uryuyama Kitashirakawa / 瓜生山 北白川</p>
+							<ul class="actions">
+								<li><a href="languageschool/nihongo_center.html" class="button alt">More details</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<div class="row">
+					<div class="3u 12u(narrower)">
+						<p> </p>
+					</div>
+					<div class="6u 12u(narrower)">
+						<section class="box inside">
 							<span class="image featured"><img src="../images/nihongoCenter/building.jpg" alt=""/></span>
 							<h3>Nihongo Center</h3>
-							<p><span class="icon fa-map-marker"></span> Kyoto / 京都</p>
+							<p><span class="icon fa-map-marker"></span> Kawaramachi / 河原町</p>
 							<ul class="actions">
 								<li><a href="languageschool/nihongo_center.html" class="button alt">More details</a></li>
 							</ul>
